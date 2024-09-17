@@ -17,30 +17,17 @@
         }
 
         /* Background image */
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('Jasmine.jpg');
-    background-size: auto; /* Use original size of the image */
-    background-repeat: repeat; /* Repeat the image */
-    background-position: top left; /* Align the image at the top left */
-    z-index: -2;
-        }
-
-        /* Video background */
-        .video-background {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            width: auto; /* Maintain original aspect ratio */
-            height: auto; /* Maintain original aspect ratio */
-            max-width: 100%; /* Ensure video does not exceed viewport width */
-            max-height: 100%; /* Ensure video does not exceed viewport height */
-            transform: translate(-50%, -50%); /* Center the video */
-            z-index: -1;
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('jasmine.jpg');
+            background-size: cover; /* Scale the image to cover the entire background */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            background-position: center center; /* Center the image */
+            z-index: -2;
         }
 
         /* Overlay styles */
@@ -260,16 +247,10 @@
 </head>
 <body>
     <div class="background-image"></div>
-    <div class="video-container">
-        <video class="video-background" autoplay loop muted>
-            <source src="0903.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
     <div class="text-overlay">
         <div class="circle-container">
             <div class="circle-image">
-                <img src="rendernet_image%20(21).jpg" alt="Circle Image">
+                <img src="rendernet_image%20(21).jpeg" alt="Circle Image">
             </div>
             <div class="circle-text">❤️Syalifah❤️</div>
             <div class="status-container">
